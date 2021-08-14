@@ -1,0 +1,79 @@
+@import './variables.scss';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background-color: $sections-background;
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+
+  .menu-wrapper {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    .mobile-menu-close {
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      color: white;
+      text-align: right;
+      font-size: 2rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .btn {
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      color: white;
+      text-align: left;
+      margin-bottom: 0.75rem;
+    }
+
+    .account-links {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5rem;
+    }
+  }
+
+  .mobile-menu {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &.mobile-active {
+    .menu-wrapper {
+      right: 0;
+    }
+  }
+
+  nav {
+    li {
+      font-size: 3rem;
+      padding: 0.5rem 0;
+    }
+  }
+}

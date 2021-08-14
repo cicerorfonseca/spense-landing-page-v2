@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+.hero-banner {
+  background-color: $sections-background;
+  padding-bottom: 2rem;
+
+  .hero-image {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      color: $brand-primary-light;
+      font-weight: 700;
+
+      img {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .form-container {
+    margin-top: 2rem;
+
+    form {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    input[type='text'] {
+      padding: 1rem 0;
+      border: 1px solid $brand-primary-lighter;
+      border-radius: 5px;
+      text-align: center;
+      color: $brand-primary-light;
+      margin-right: 15px;
+
+      &::placeholder {
+        color: $brand-primary-lighter;
+      }
+    }
+
+    button {
+      padding: 1rem 1.1rem;
+      max-width: max-content;
+      white-space: nowrap;
+    }
+  }
+}
