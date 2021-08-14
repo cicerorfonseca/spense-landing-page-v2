@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+.escrow-content {
+  background-color: $sections-background;
+  border-radius: 10px;
+  background-image: url('../../assets/imgs/escrow-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
+  max-width: 100%;
+  min-height: 640px;
+
+  .content-wrapper {
+    padding: 1rem 2rem 0 2rem;
+  }
+
+  a {
+    color: $brand-primary-light;
+    font-weight: 800;
+    text-decoration: none;
+
+    i {
+      padding-left: 5px;
+    }
+  }
+}

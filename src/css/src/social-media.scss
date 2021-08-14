@@ -1,0 +1,22 @@
+.social-media-logos {
+  padding: 2.5rem 0;
+
+  .logos-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+    > :nth-last-child(-n + 5) {
+      display: none;
+    }
+
+    .logo-img {
+      flex: 0 0 31%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
