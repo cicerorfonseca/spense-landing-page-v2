@@ -28,9 +28,11 @@
     margin-top: 2rem;
 
     form {
-      display: flex;
-      justify-content: flex-start;
-      width: 100%;
+      // display: flex;
+      // justify-content: flex-start;
+      // width: 100%;
+      display: grid;
+      grid-template-columns: 60% 40%;
     }
 
     input[type='text'] {

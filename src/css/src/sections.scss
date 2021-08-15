@@ -1,0 +1,78 @@
+@import './variables.scss';
+
+// SOCIAL MEDIA
+.social-media-logos {
+  padding: 2.5rem 0;
+
+  .logos-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+    > :nth-last-child(-n + 5) {
+      display: none;
+    }
+
+    .logo-img {
+      flex: 0 0 31%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ESCROW
+.escrow-content {
+  background-color: $sections-background;
+  border-radius: 10px;
+  background-image: url('../../assets/imgs/escrow-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
+  max-width: 100%;
+  min-height: 620px;
+
+  .content-wrapper {
+    padding: 1rem 2rem 0 2rem;
+  }
+}
+
+// TEXT EDITOR
+.text-editor {
+  padding: 2.5rem 0;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+// FOOTER
+footer {
+  background-color: black;
+  color: $brand-grey;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  h3 {
+    color: white;
+  }
+
+  p {
+    color: $brand-grey;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .footer-links-item {
+    li {
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+    }
+  }
+}

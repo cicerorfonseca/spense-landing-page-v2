@@ -51,6 +51,12 @@ header {
       display: flex;
       flex-direction: column;
       font-size: 1.5rem;
+
+      button {
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
   }
 
@@ -74,6 +80,11 @@ header {
     li {
       font-size: 3rem;
       padding: 0.5rem 0;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }

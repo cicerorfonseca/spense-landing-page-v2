@@ -9,8 +9,8 @@ const Escrow = () => {
             worry about scams.
           </p>
           <p>
-            <a href='/'>
-              Learn more about Escrow<i class='fas fa-long-arrow-alt-right'></i>
+            <a href='/' className='content-anchor'>
+              Learn more about Escrow <i class='fas fa-long-arrow-alt-right'></i>
             </a>
           </p>
         </div>

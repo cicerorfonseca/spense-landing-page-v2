@@ -4,6 +4,8 @@ import Header from './components/Header';
 import HeroBanner from './components/HeroBanner';
 import SocialMedia from './components/SocialMedia';
 import Escrow from './components/Escrow';
+import TextEditor from './components/TextEditor';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <HeroBanner />
       <SocialMedia />
       <Escrow />
+      <TextEditor />
+      <Footer />
     </div>
   );
 }

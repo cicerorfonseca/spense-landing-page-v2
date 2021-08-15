@@ -18,9 +18,15 @@ const Header = () => {
         </button>
         <nav>
           <ul>
-            <li>Business</li>
-            <li>Pricing</li>
-            <li>Features</li>
+            <li>
+              <a href='/'>Business</a>
+            </li>
+            <li>
+              <a href='/'>Pricing</a>
+            </li>
+            <li>
+              <a href='/'>Features</a>
+            </li>
           </ul>
         </nav>
         <div className='account-links'>
