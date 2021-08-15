@@ -23,7 +23,7 @@ header {
     flex-direction: column;
     padding: 2rem;
     overflow-x: hidden;
-    transition: 0.5s;
+    // transition: 0.5s;
 
     .mobile-menu-close {
       border: none;
@@ -84,6 +84,79 @@ header {
       a {
         color: white;
         text-decoration: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $medium) {
+  header {
+    .mobile-menu {
+      display: none;
+    }
+
+    .mobile-menu-close {
+      display: none;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-wrapper {
+      background-color: transparent;
+      top: unset;
+      right: unset;
+      height: unset;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+      padding: 0;
+
+      nav {
+        ul {
+          display: flex;
+          flex-direction: row;
+
+          li {
+            font-size: 1.1rem;
+            margin-left: 1.5rem;
+          }
+
+          a {
+            color: $brand-primary-dark;
+          }
+        }
+      }
+
+      .account-links {
+        flex-direction: row;
+        align-items: center;
+
+        .btn {
+          color: $brand-primary-dark;
+          font-size: 1.1rem;
+          margin-bottom: 0;
+          margin-left: 1.5rem;
+          font-weight: 500;
+          height: 50px;
+
+          &:last-child {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+
+            cursor: pointer;
+
+            &:hover {
+              opacity: 0.9;
+            }
+          }
+        }
       }
     }
   }

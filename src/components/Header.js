@@ -30,8 +30,8 @@ const Header = () => {
           </ul>
         </nav>
         <div className='account-links'>
-          <Button buttonType='primary' text='Login' />
-          <Button buttonType='primary' text='Get Started' />
+          <Button text='Login' />
+          <Button text='Get Started' />
         </div>
       </div>
       <button onClick={toggleMobileMenu} className='mobile-menu'>

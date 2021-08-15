@@ -10,10 +10,10 @@ const HeroBanner = () => {
     <section className='hero-banner container'>
       <picture className='hero-image'>
         <source srcSet={desktopimg} media='(min-width: 1200px)' />
-        <source srcSet={tabletimg} media='(min-width: 800px)' />
+        <source srcSet={tabletimg} media='(min-width: 768px)' />
         <img src={mobileimg} alt='April earning withdraw' />
       </picture>
-      <h2 className='section-header'>Share your unfiltered thoughts. Get paid.</h2>
+      <h1>Share your unfiltered thoughts. Get paid.</h1>
       <p>
         Spence is an open platform for individuals to share their unfiltered thoughts. Discus the topics you love, and get paid for doing{' '}
         <em>just</em> that.
@@ -33,10 +33,8 @@ const HeroBanner = () => {
         </li>
       </ul>
       <div className='form-container'>
-        <form>
-          <input type='text' id='email' placeholder='john@example.com' />
-          <Button buttonType='primary' text='Get Started' />
-        </form>
+        <input type='text' id='email' placeholder='john@example.com' />
+        <Button buttonType='primary' text='Get Started' />
       </div>
     </section>
   );

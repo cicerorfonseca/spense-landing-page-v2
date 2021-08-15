@@ -15,7 +15,7 @@
     }
 
     .logo-img {
-      flex: 0 0 31%;
+      flex: 0 0 28%;
 
       img {
         width: 100%;
@@ -28,15 +28,17 @@
 .escrow-content {
   background-color: $sections-background;
   border-radius: 10px;
-  background-image: url('../../assets/imgs/escrow-mobile.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center bottom;
-  max-width: 100%;
-  min-height: 620px;
+  display: flex;
+  justify-content: center;
 
   .content-wrapper {
+    background-image: url('../../assets/imgs/escrow-mobile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
     padding: 1rem 2rem 0 2rem;
+    max-width: 374px;
+    height: 620px;
   }
 }
 
@@ -45,7 +47,8 @@
   padding: 2.5rem 0;
 
   img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 721px;
   }
 }
 
@@ -65,14 +68,84 @@ footer {
   }
 
   .footer-links {
+    margin: 0;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-gap: 0.5rem;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .footer-item-spence {
+      grid-column: 1/3;
+    }
   }
 
   .footer-links-item {
     li {
-      font-size: 1.1rem;
       margin-bottom: 0.6rem;
+
+      a {
+        font-size: 1.1rem;
+        color: $brand-grey;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $medium) {
+  // SOCIAL MEDIA
+  .social-media-logos {
+    .logos-list {
+      li:nth-child(n + 4):nth-child(-n + 5) {
+        display: block;
+      }
+
+      .logo-img {
+        flex: 0 0 17%;
+      }
+    }
+  }
+
+  // ESCROW
+  .escrow-content {
+    .content-wrapper {
+      background-image: url('../../assets/imgs/escrow-tablet.png');
+      max-width: 520px;
+      height: 520px;
+    }
+  }
+
+  // TEXT EDITOR
+  .text-editor {
+    padding-bottom: 0;
+
+    .img-wrapper {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  // FOOTER
+  footer {
+    .footer-links {
+      grid-template-columns: 25% 25% 20% 20%;
+      grid-gap: 1rem;
+
+      .footer-item-spence {
+        grid-column: 1/3;
+      }
+
+      .footer-item-sitemap {
+        grid-row: 1/2;
+        grid-column: 3/4;
+      }
+
+      .footer-item-resources {
+        grid-row: 1/2;
+        grid-column: 4/5;
+      }
     }
   }
 }

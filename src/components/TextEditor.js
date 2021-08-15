@@ -11,7 +11,9 @@ const TextEditor = () => {
             Text Editor Live Demo <i class='fas fa-long-arrow-alt-right'></i>
           </a>
         </p>
-        <img src={texteditor} alt='April earning withdraw' />
+        <div className='img-wrapper'>
+          <img src={texteditor} alt='April earning withdraw' />
+        </div>
       </div>
     </section>
   );

@@ -26,14 +26,7 @@
 
   .form-container {
     margin-top: 2rem;
-
-    form {
-      // display: flex;
-      // justify-content: flex-start;
-      // width: 100%;
-      display: grid;
-      grid-template-columns: 60% 40%;
-    }
+    display: flex;
 
     input[type='text'] {
       padding: 1rem 0;
@@ -41,17 +34,27 @@
       border-radius: 5px;
       text-align: center;
       color: $brand-primary-light;
-      margin-right: 15px;
+      margin-right: 10px;
 
       &::placeholder {
         color: $brand-primary-lighter;
       }
     }
+  }
+}
 
-    button {
-      padding: 1rem 1.1rem;
-      max-width: max-content;
-      white-space: nowrap;
+@media only screen and (min-width: $medium) {
+  .hero-banner {
+    ul {
+      li {
+        font-size: 1.1rem;
+      }
+    }
+
+    .form-container {
+      form {
+        grid-template-columns: 30% 70%;
+      }
     }
   }
 }
