@@ -22,6 +22,10 @@ body {
   font-family: 'Cabin', sans-serif;
 }
 
+.App {
+  margin: auto;
+}
+
 h1 {
   max-width: 65%;
 }
@@ -46,6 +50,7 @@ ul {
 }
 
 .container {
+  margin: auto;
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -61,8 +66,8 @@ ul {
 .btn {
   display: flex;
   align-items: center;
-  padding-right: 0.7rem;
-  padding-left: 0.7rem;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
   white-space: nowrap;
   border: none;
   border-radius: 5px;
@@ -90,6 +95,7 @@ ul {
   .container {
     padding-right: 2rem;
     padding-left: 2rem;
+    max-width: $large;
   }
 
   h1 {
@@ -103,5 +109,17 @@ ul {
 
   .section-header {
     max-width: 65%;
+  }
+}
+
+@media only screen and (min-width: $large) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    max-width: $x-large;
+  }
+
+  h1 {
+    font-size: 3rem;
   }
 }

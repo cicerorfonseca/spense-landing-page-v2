@@ -70,8 +70,8 @@ footer {
   .footer-links {
     margin: 0;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 0.5rem;
+    grid-template-columns: 48% 48%;
+    grid-gap: 1%;
 
     h3 {
       margin-top: 0;
@@ -146,6 +146,30 @@ footer {
         grid-row: 1/2;
         grid-column: 4/5;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $large) {
+  // SOCIAL MEDIA
+  .social-media-logos {
+    .logos-list {
+      .logo-img {
+        display: block;
+      }
+
+      .logo-img {
+        flex: 0 0 10%;
+      }
+    }
+  }
+
+  // ESCROW
+  .escrow-content {
+    .content-wrapper {
+      background-image: url('../../assets/imgs/escrow-desktop.png');
+
+      // TODO: TO BE CONTINUED FROM THIS POINT
     }
   }
 }

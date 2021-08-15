@@ -1,14 +1,24 @@
 @import './variables.scss';
 
 header {
+  background-color: $sections-background;
+  display: flex;
+  justify-content: center;
+}
+
+.header-content {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 2.5rem;
-  background-color: $sections-background;
+  padding: 2.5rem 0;
 
   .logo {
     font-weight: 700;
     font-size: 1.4rem;
+
+    &.mobile {
+      color: $brand-primary-dark;
+    }
   }
 
   .menu-wrapper {
@@ -46,16 +56,16 @@ header {
       text-align: left;
       margin-bottom: 0.75rem;
     }
+  }
 
-    .account-links {
-      display: flex;
-      flex-direction: column;
-      font-size: 1.5rem;
+  .account-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
 
-      button {
-        &:hover {
-          cursor: pointer;
-        }
+    button {
+      &:hover {
+        cursor: pointer;
       }
     }
   }
@@ -90,7 +100,15 @@ header {
 }
 
 @media only screen and (min-width: $medium) {
-  header {
+  .header-content {
+    .logo {
+      color: $brand-primary-dark;
+
+      &.mobile {
+        display: none;
+      }
+    }
+
     .mobile-menu {
       display: none;
     }
@@ -103,21 +121,25 @@ header {
       display: flex;
       align-items: center;
     }
-
     .menu-wrapper {
+      width: 100%;
       background-color: transparent;
       top: unset;
       right: unset;
       height: unset;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: space-between;
       position: relative;
       padding: 0;
 
       nav {
+        flex-grow: 2;
+        justify-items: flex-end;
+
         ul {
           display: flex;
           flex-direction: row;
+          justify-content: flex-end;
 
           li {
             font-size: 1.1rem;
@@ -129,35 +151,49 @@ header {
           }
         }
       }
+    }
 
-      .account-links {
-        flex-direction: row;
-        align-items: center;
+    .account-links {
+      flex-direction: row;
+      align-items: center;
 
-        .btn {
-          color: $brand-primary-dark;
-          font-size: 1.1rem;
-          margin-bottom: 0;
-          margin-left: 1.5rem;
-          font-weight: 500;
-          height: 50px;
+      .btn {
+        color: $brand-primary-dark;
+        font-size: 1.1rem;
+        margin-bottom: 0;
+        margin-left: 1.5rem;
+        font-weight: 500;
+        height: 50px;
 
-          &:last-child {
-            padding-left: 1rem;
-            padding-right: 1rem;
-            border: none;
-            border-radius: 5px;
-            background-color: black;
-            color: white;
+        &:last-child {
+          padding-left: 1rem;
+          padding-right: 1rem;
+          border: none;
+          border-radius: 5px;
+          background-color: black;
+          color: white;
 
-            cursor: pointer;
+          cursor: pointer;
 
-            &:hover {
-              opacity: 0.9;
-            }
+          &:hover {
+            opacity: 0.9;
           }
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $large) {
+  .header-content {
+    .menu-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 33%);
+      justify-content: center;
+    }
+
+    .account-links {
+      justify-content: flex-end;
     }
   }
 }
