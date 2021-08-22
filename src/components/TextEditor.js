@@ -8,7 +8,7 @@ const TextEditor = () => {
         <p>Our text editor pulls you into focus mode with it's simplistic design and usability so you can put out your best writings.</p>
         <p>
           <a href='/' className='content-anchor'>
-            Text Editor Live Demo <i class='fas fa-long-arrow-alt-right'></i>
+            Text Editor Live Demo <i className='fas fa-long-arrow-alt-right'></i>
           </a>
         </p>
         <div className='img-wrapper'>

@@ -12,9 +12,9 @@ const Header = () => {
   return (
     <header>
       <div className={`header-content container ${displayMobileMenu ? 'mobile-active' : ''}`}>
-        <div className='logo mobile'>spence.</div>
+        <div className='logo mobile'>spense.</div>
         <div className='menu-wrapper'>
-          <div className='logo'>spence.</div>
+          <div className='logo'>spense.</div>
           <button onClick={toggleMobileMenu} className='mobile-menu-close'>
             X
           </button>

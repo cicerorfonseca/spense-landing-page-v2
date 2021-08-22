@@ -2,10 +2,10 @@ const Footer = () => {
   return (
     <footer className='container'>
       <ul className='footer-links'>
-        <li className='footer-item-spence'>
-          <h3>spence.</h3>
+        <li className='footer-item-spense'>
+          <h3>spense.</h3>
           <p>
-            Spence is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing{' '}
+            Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing{' '}
             <em>just</em> that.
           </p>
         </li>

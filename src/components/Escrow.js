@@ -5,12 +5,12 @@ const Escrow = () => {
         <div className='content-wrapper'>
           <h2 className='section-header'>Secure your money with Escrow.</h2>
           <p>
-            Spence uses Escrow to secure all payments. We believe Escrow offers the highest level of security for your payments, so you never need to
+            Spense uses Escrow to secure all payments. We believe Escrow offers the highest level of security for your payments, so you never need to
             worry about scams.
           </p>
           <p>
             <a href='/' className='content-anchor'>
-              Learn more about Escrow <i class='fas fa-long-arrow-alt-right'></i>
+              Learn more about Escrow <i className='fas fa-long-arrow-alt-right'></i>
             </a>
           </p>
         </div>

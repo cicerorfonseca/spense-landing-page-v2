@@ -17,7 +17,7 @@ const HeroBanner = () => {
         <div className='hero-details'>
           <h1>Share your unfiltered thoughts. Get paid.</h1>
           <p>
-            Spence is an open platform for individuals to share their unfiltered thoughts. Discus the topics you love, and get paid for doing{' '}
+            Spense is an open platform for individuals to share their unfiltered thoughts. Discus the topics you love, and get paid for doing{' '}
             <em>just</em> that.
           </p>
           <ul>
