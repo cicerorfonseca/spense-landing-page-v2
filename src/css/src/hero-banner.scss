@@ -28,7 +28,7 @@
     margin-top: 2rem;
     display: flex;
 
-    input[type='text'] {
+    input[type='email'] {
       padding: 1rem 0;
       border: 1px solid $brand-primary-lighter;
       border-radius: 5px;
@@ -52,7 +52,7 @@
     }
 
     .form-container {
-      input[type='text'] {
+      input[type='email'] {
         flex: 0 0 30%;
       }
     }
@@ -75,7 +75,7 @@
     }
 
     .form-container {
-      input[type='text'] {
+      input[type='email'] {
         flex: 0 0 40%;
       }
     }

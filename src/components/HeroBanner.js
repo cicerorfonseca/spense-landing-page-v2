@@ -35,7 +35,7 @@ const HeroBanner = () => {
             </li>
           </ul>
           <div className='form-container'>
-            <input type='text' id='email' placeholder='john@example.com' />
+            <input type='email' id='email' placeholder='john@example.com' />
             <Button buttonType='primary' text='Get Started' />
           </div>
         </div>
