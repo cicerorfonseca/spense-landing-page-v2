@@ -98,6 +98,11 @@ ul {
     max-width: $large;
   }
 
+  .btn {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
   h1 {
     font-size: 3.5rem;
     max-width: 80%;
@@ -116,7 +121,7 @@ ul {
   .container {
     padding-right: 3rem;
     padding-left: 3rem;
-    max-width: $x-large;
+    max-width: $large;
   }
 
   h1 {

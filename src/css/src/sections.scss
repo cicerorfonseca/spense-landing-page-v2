@@ -167,9 +167,67 @@ footer {
   // ESCROW
   .escrow-content {
     .content-wrapper {
+      width: 100%;
+      max-width: unset;
+      height: auto;
       background-image: url('../../assets/imgs/escrow-desktop.png');
+      background-position: right;
 
-      // TODO: TO BE CONTINUED FROM THIS POINT
+      > * {
+        max-width: 55%;
+        padding-left: 1.5rem;
+      }
+
+      .section-header {
+        max-width: 40%;
+        padding-top: 3rem;
+        margin-top: 0;
+      }
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &:last-child {
+          padding-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+  // TEXT EDITOR
+  .text-editor {
+    .content-wrapper {
+      display: flex;
+
+      .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0 0 40%;
+
+        .section-header {
+          margin: 0;
+          max-width: unset;
+        }
+      }
+
+      .img-wrapper {
+        flex: 0 0 60%;
+        order: -1;
+      }
+    }
+  }
+
+  // FOOTER
+  footer {
+    .footer-links {
+      grid-template-columns: 30% 14% 14% 14% 14% 14%;
+      grid-gap: 0;
+
+      .footer-item-spense {
+        max-width: 85%;
+      }
     }
   }
 }

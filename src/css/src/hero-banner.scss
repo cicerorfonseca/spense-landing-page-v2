@@ -52,8 +52,8 @@
     }
 
     .form-container {
-      form {
-        grid-template-columns: 30% 70%;
+      input[type='text'] {
+        flex: 0 0 30%;
       }
     }
   }
@@ -71,6 +71,12 @@
     .hero-details {
       h1 {
         margin-top: 0;
+      }
+    }
+
+    .form-container {
+      input[type='text'] {
+        flex: 0 0 40%;
       }
     }
   }
