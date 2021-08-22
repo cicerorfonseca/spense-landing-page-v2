@@ -1,4 +1,4 @@
-# spense-landing-page
+# Spense Landing Page
 
 Spense is a landing page for writers. A great Codewell challenge for practicing absolute positioning and flex layouts.
 
