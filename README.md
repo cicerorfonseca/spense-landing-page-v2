@@ -27,6 +27,6 @@ You will also see any lint errors in the console.
 
 I could have used plain HTML/CSS/JS to build this project, although, I opted to use React to kick this project off because I intend to implement all the other routes not available in the designs.
 
-I also choose to use SASS specially to nest styles and creating mixins for buttons and shared styling.
+I also choose to use SASS especially to nest styles and creating mixins for buttons and shared styling.
 
-I used `normalize.css` from Nicolas Gallagher - github.com/necolas/normalize.css - to add CSS resets and normalize styles browser wide.
+I used normalize.css from Nicolas Gallagher - github.com/necolas/normalize.css - to add CSS resets and normalize styles browser-wide.
